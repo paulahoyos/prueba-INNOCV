@@ -1,0 +1,18 @@
+<h2>USER GET </h2>
+
+<p>
+  <span>Find by ID:</span>
+  <input type="text" [(ngModel)]="user.id">
+</p>
+<p>
+  <button (click)="this.getuser()">GET</button>
+</p>
+
+<div *ngIf="! usersFind.length">There is no  ANY users</div>
+<div>
+  <article *ngFor="let user of usersFind">
+    <span>{{user.name}}</span>
+    <span>{{user.id}}</span>
+    <span>{{user.birthday}}</span>
+  </article>
+</div>

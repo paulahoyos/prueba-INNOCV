@@ -1,0 +1,18 @@
+<h2> CREATE NEW USER</h2>
+<p>
+  <span>Id:</span>
+  <input type="text" [(ngModel)]="user.id">
+</p>
+<p>
+  <span>Name:</span>
+  <input type="text" [(ngModel)]="user.name">
+</p>
+<p>
+  <span>Birthday:</span>
+  <input type="text" [(ngModel)]="user.birthday">
+</p>
+
+
+<p>
+  <button (click)="this.newUser()">CREATE</button>
+</p>

@@ -1,0 +1,16 @@
+<h2>USER UPDATE </h2>
+<p>
+  <span>Look by old ID:</span>
+  <input type="text" [(ngModel)]="user.id">
+</p>
+<p>
+  <span> new name:</span>
+  <input type="text" [(ngModel)]="user.name">
+</p>
+<p>
+  <span>new birthday:</span>
+  <input type="text" [(ngModel)]="user.birthday">
+</p>
+<p>
+  <button (click)="this.UPDATEuser()">update</button>
+</p>

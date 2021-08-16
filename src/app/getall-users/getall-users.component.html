@@ -1,0 +1,11 @@
+<h2>
+ GET ALL USERS
+</h2>
+<div *ngIf="! users.length">There is no ANY users</div>
+<div>
+  <article *ngFor="let user of users">
+    <span>{{user.name}}</span>
+    <span>{{user.id}}</span>
+    <span>{{user.birthday}}</span>
+  </article>
+</div>
